@@ -1,0 +1,15 @@
+{
+  "CreateBlockStudent": {
+    "type": "object",
+    "properties": {
+      "studentId": {
+        "type": "integer",
+        "example": 6
+      },
+      "courseId": {
+        "type": "integer",
+        "example": 6
+      }
+    }
+  }
+}

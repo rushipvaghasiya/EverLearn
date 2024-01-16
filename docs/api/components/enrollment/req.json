@@ -1,0 +1,20 @@
+{
+  "CreateEnrollment": {
+    "type": "object",
+    "properties": {
+      "courseId": {
+        "type": "integer",
+        "example": 6
+      }
+    }
+  },
+  "UpdateEnrollment" : {
+    "type": "object",
+    "properties": {
+      "courseId": {
+        "type": "integer",
+        "example": 6
+      }
+    }
+  }
+}

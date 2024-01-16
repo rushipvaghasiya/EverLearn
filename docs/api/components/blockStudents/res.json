@@ -1,0 +1,71 @@
+{
+    "GetBlockStudent": {
+        "type": "object",
+        "properties": {
+          "blockstudentId": {
+            "type": "integer",
+            "example": 6
+          },
+          "blockedBy": {
+            "type": "integer",
+            "example": 6
+          },
+          "studentId": {
+            "type": "integer",
+            "example": 6
+          },
+          "courseId": {
+            "type": "integer",
+            "example": 6
+          },
+          "blockedAt": {
+            "type": "timestamp",
+            "example": "2023-03-14T18:30:00.000Z"
+          },
+          "userName": {
+            "type": "string",
+            "example": "Shish"
+          },
+          "userEmail": {
+            "type": "string",
+            "example": "Ash@hotmail.com"
+          }
+        }
+    },
+    "GetBlockStudentCourse": {
+        "type": "array",
+        "items": {
+            "type": "object",
+            "properties": {
+              "blockstudentId": {
+                "type": "integer",
+                "example": 6
+              },
+              "blockedBy": {
+                "type": "integer",
+                "example": 6
+              },
+              "studentId": {
+                "type": "integer",
+                "example": 6
+              },
+              "courseId": {
+                "type": "integer",
+                "example": 6
+              },
+              "blockedAt": {
+                "type": "timestamp",
+                "example": "2023-03-14T18:30:00.000Z"
+              },
+              "userName": {
+                "type": "string",
+                "example": "Shish"
+              },
+              "userEmail": {
+                "type": "string",
+                "example": "Ash@hotmail.com"
+              }
+            }
+        }
+    }
+}

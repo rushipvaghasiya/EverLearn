@@ -1,0 +1,917 @@
+{
+	"info": {
+		"_postman_id": "11d3bdf7-f573-4e5b-8b16-7a30715b4863",
+		"name": "CourseTrack",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15645443"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"jhj\",\r\n    \"userEmail\": \"535345@hotmail.com\",\r\n    \"userPassword\": \"Admin123\",\r\n    \"userRole\": \"Student\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/user/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userEmail\": \"das344@hotmail.com\",\r\n    \"userPassword\": \"Admin123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getEnrollmentsStudent",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU3LCJ1c2VyTmFtZSI6ImpoaiIsInVzZXJFbWFpbCI6ImRhczM0NEBob3RtYWlsLmNvbSIsInVzZXJQYXNzd29yZCI6IiQyYiQxMiRPLjhTUERXdmEuYWcvUFYxYWkuLjJ1QTdtTHJKUzZPczJnV2JiTmNwM3diSzNQOTZlakM0cSIsInVzZXJSb2xlIjoiU3R1ZGVudCIsImlhdCI6MTY4NDEzMjE5N30.w1AeUsWkt-nM2o8hoYPkG5_Wdi6-1Jp-b4yhfBzSYas",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/user/enrollments/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"enrollments",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "course",
+			"item": [
+				{
+					"name": "getCourses",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU2LCJ1c2VyTmFtZSI6ImpoaiIsInVzZXJFbWFpbCI6IjIzNDMyQGhvdG1haWwuY29tIiwidXNlclBhc3N3b3JkIjoiJDJiJDEyJGlCL3BtNWhvQVVJQ1MxM2loYndkQi5BdHVGeFAzTFAwNTNBRkV6SVRrYnFONUxaNFNtaGZHIiwidXNlclJvbGUiOiJUcmFpbmVyIiwiaWF0IjoxNjg0MTI5ODk4fQ.Dv2LxP447AEDNLLi3FIziHe8wW5zCyRWEWRqR1iaaXw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/courses/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"courses",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCourse",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU2LCJ1c2VyTmFtZSI6ImpoaiIsInVzZXJFbWFpbCI6IjIzNDMyQGhvdG1haWwuY29tIiwidXNlclBhc3N3b3JkIjoiJDJiJDEyJGlCL3BtNWhvQVVJQ1MxM2loYndkQi5BdHVGeFAzTFAwNTNBRkV6SVRrYnFONUxaNFNtaGZHIiwidXNlclJvbGUiOiJUcmFpbmVyIiwiaWF0IjoxNjg0MTI5ODk4fQ.Dv2LxP447AEDNLLi3FIziHe8wW5zCyRWEWRqR1iaaXw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/courses/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"courses",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createCourse",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU2LCJ1c2VyTmFtZSI6ImpoaiIsInVzZXJFbWFpbCI6IjIzNDMyQGhvdG1haWwuY29tIiwidXNlclBhc3N3b3JkIjoiJDJiJDEyJGlCL3BtNWhvQVVJQ1MxM2loYndkQi5BdHVGeFAzTFAwNTNBRkV6SVRrYnFONUxaNFNtaGZHIiwidXNlclJvbGUiOiJUcmFpbmVyIiwiaWF0IjoxNjg0MTI5ODk4fQ.Dv2LxP447AEDNLLi3FIziHe8wW5zCyRWEWRqR1iaaXw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"courseName\":\"Swagger\" ,\r\n    \"courseDescription\": \"adasdasdasdasd\",\r\n    \"trainerId\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/courses/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"courses",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateCourse",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU2LCJ1c2VyTmFtZSI6ImpoaiIsInVzZXJFbWFpbCI6IjIzNDMyQGhvdG1haWwuY29tIiwidXNlclBhc3N3b3JkIjoiJDJiJDEyJGlCL3BtNWhvQVVJQ1MxM2loYndkQi5BdHVGeFAzTFAwNTNBRkV6SVRrYnFONUxaNFNtaGZHIiwidXNlclJvbGUiOiJUcmFpbmVyIiwiaWF0IjoxNjg0MTI5ODk4fQ.Dv2LxP447AEDNLLi3FIziHe8wW5zCyRWEWRqR1iaaXw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"courseDescription\": \"javascipt tutorial\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/courses/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"courses",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCourse",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU2LCJ1c2VyTmFtZSI6ImpoaiIsInVzZXJFbWFpbCI6IjIzNDMyQGhvdG1haWwuY29tIiwidXNlclBhc3N3b3JkIjoiJDJiJDEyJGlCL3BtNWhvQVVJQ1MxM2loYndkQi5BdHVGeFAzTFAwNTNBRkV6SVRrYnFONUxaNFNtaGZHIiwidXNlclJvbGUiOiJUcmFpbmVyIiwiaWF0IjoxNjg0MTI5ODk4fQ.Dv2LxP447AEDNLLi3FIziHe8wW5zCyRWEWRqR1iaaXw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/courses/19",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"courses",
+								"19"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCourseRatings",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU2LCJ1c2VyTmFtZSI6ImpoaiIsInVzZXJFbWFpbCI6IjIzNDMyQGhvdG1haWwuY29tIiwidXNlclBhc3N3b3JkIjoiJDJiJDEyJGlCL3BtNWhvQVVJQ1MxM2loYndkQi5BdHVGeFAzTFAwNTNBRkV6SVRrYnFONUxaNFNtaGZHIiwidXNlclJvbGUiOiJUcmFpbmVyIiwiaWF0IjoxNjg0MTI5ODk4fQ.Dv2LxP447AEDNLLi3FIziHe8wW5zCyRWEWRqR1iaaXw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/courses/6/ratings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"courses",
+								"6",
+								"ratings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addCourseRating",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU3LCJ1c2VyTmFtZSI6ImpoaiIsInVzZXJFbWFpbCI6ImRhczM0NEBob3RtYWlsLmNvbSIsInVzZXJQYXNzd29yZCI6IiQyYiQxMiRPLjhTUERXdmEuYWcvUFYxYWkuLjJ1QTdtTHJKUzZPczJnV2JiTmNwM3diSzNQOTZlakM0cSIsInVzZXJSb2xlIjoiU3R1ZGVudCIsImlhdCI6MTY4NDEzMjE5N30.w1AeUsWkt-nM2o8hoYPkG5_Wdi6-1Jp-b4yhfBzSYas",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"rating\": 5,\r\n    \"studentId\": 7\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/courses/9/ratings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"courses",
+								"9",
+								"ratings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCourseModules",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU3LCJ1c2VyTmFtZSI6ImpoaiIsInVzZXJFbWFpbCI6ImRhczM0NEBob3RtYWlsLmNvbSIsInVzZXJQYXNzd29yZCI6IiQyYiQxMiRPLjhTUERXdmEuYWcvUFYxYWkuLjJ1QTdtTHJKUzZPczJnV2JiTmNwM3diSzNQOTZlakM0cSIsInVzZXJSb2xlIjoiU3R1ZGVudCIsImlhdCI6MTY4NDEzMjE5N30.w1AeUsWkt-nM2o8hoYPkG5_Wdi6-1Jp-b4yhfBzSYas",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/courses/4/modules",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"courses",
+								"4",
+								"modules"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createCourseModule",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU2LCJ1c2VyTmFtZSI6ImpoaiIsInVzZXJFbWFpbCI6IjIzNDMyQGhvdG1haWwuY29tIiwidXNlclBhc3N3b3JkIjoiJDJiJDEyJGlCL3BtNWhvQVVJQ1MxM2loYndkQi5BdHVGeFAzTFAwNTNBRkV6SVRrYnFONUxaNFNtaGZHIiwidXNlclJvbGUiOiJUcmFpbmVyIiwiaWF0IjoxNjg0MTI5ODk4fQ.Dv2LxP447AEDNLLi3FIziHe8wW5zCyRWEWRqR1iaaXw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"moduleName\":\"asdadas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/courses/4/modules",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"courses",
+								"4",
+								"modules"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "module",
+			"item": [
+				{
+					"name": "getModule",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlck5hbWUiOiJyb25pbCIsInVzZXJFbWFpbCI6InIxMjNAaG90bWFpbC5jb20iLCJ1c2VyUGFzc3dvcmQiOiIkMmIkMTIkQlk0eWNxZWJJdHdTckVsWVNIWmJTT2xtdUc2cVZIb1NiY1FCUzF3Q3JkU1hBdUxBTk4uRUsiLCJ1c2VyUm9sZSI6IlN0dWRlbnQiLCJpYXQiOjE2ODAyODg3NTB9.MA2_mZzye_96vPAfhi1AtZnw4SYL-mUrA9wJ1NPVAUY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/modules/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"modules",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateModule",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU2LCJ1c2VyTmFtZSI6ImpoaiIsInVzZXJFbWFpbCI6IjIzNDMyQGhvdG1haWwuY29tIiwidXNlclBhc3N3b3JkIjoiJDJiJDEyJGlCL3BtNWhvQVVJQ1MxM2loYndkQi5BdHVGeFAzTFAwNTNBRkV6SVRrYnFONUxaNFNtaGZHIiwidXNlclJvbGUiOiJUcmFpbmVyIiwiaWF0IjoxNjg0MTI5ODk4fQ.Dv2LxP447AEDNLLi3FIziHe8wW5zCyRWEWRqR1iaaXw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"moduleName\": \"Introduction\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/modules/2?",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"modules",
+								"2"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteModule",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU2LCJ1c2VyTmFtZSI6ImpoaiIsInVzZXJFbWFpbCI6IjIzNDMyQGhvdG1haWwuY29tIiwidXNlclBhc3N3b3JkIjoiJDJiJDEyJGlCL3BtNWhvQVVJQ1MxM2loYndkQi5BdHVGeFAzTFAwNTNBRkV6SVRrYnFONUxaNFNtaGZHIiwidXNlclJvbGUiOiJUcmFpbmVyIiwiaWF0IjoxNjg0MTI5ODk4fQ.Dv2LxP447AEDNLLi3FIziHe8wW5zCyRWEWRqR1iaaXw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/modules/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"modules",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getModuleLesson",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU2LCJ1c2VyTmFtZSI6ImpoaiIsInVzZXJFbWFpbCI6IjIzNDMyQGhvdG1haWwuY29tIiwidXNlclBhc3N3b3JkIjoiJDJiJDEyJGlCL3BtNWhvQVVJQ1MxM2loYndkQi5BdHVGeFAzTFAwNTNBRkV6SVRrYnFONUxaNFNtaGZHIiwidXNlclJvbGUiOiJUcmFpbmVyIiwiaWF0IjoxNjg0MTI5ODk4fQ.Dv2LxP447AEDNLLi3FIziHe8wW5zCyRWEWRqR1iaaXw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/modules/3/lessons",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"modules",
+								"3",
+								"lessons"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createModuleLesson",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU2LCJ1c2VyTmFtZSI6ImpoaiIsInVzZXJFbWFpbCI6IjIzNDMyQGhvdG1haWwuY29tIiwidXNlclBhc3N3b3JkIjoiJDJiJDEyJGlCL3BtNWhvQVVJQ1MxM2loYndkQi5BdHVGeFAzTFAwNTNBRkV6SVRrYnFONUxaNFNtaGZHIiwidXNlclJvbGUiOiJUcmFpbmVyIiwiaWF0IjoxNjg0MTI5ODk4fQ.Dv2LxP447AEDNLLi3FIziHe8wW5zCyRWEWRqR1iaaXw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"moduleId\": 2,\r\n    \"lessonName\": \"asdadas\", \r\n    \"lessonLink\": \"https://www.youtube.com/\",\r\n    \"lessonDescription\": \"asdadsada\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/modules/3/lessons",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"modules",
+								"3",
+								"lessons"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "lesson",
+			"item": [
+				{
+					"name": "getLesson",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU2LCJ1c2VyTmFtZSI6ImpoaiIsInVzZXJFbWFpbCI6IjIzNDMyQGhvdG1haWwuY29tIiwidXNlclBhc3N3b3JkIjoiJDJiJDEyJGlCL3BtNWhvQVVJQ1MxM2loYndkQi5BdHVGeFAzTFAwNTNBRkV6SVRrYnFONUxaNFNtaGZHIiwidXNlclJvbGUiOiJUcmFpbmVyIiwiaWF0IjoxNjg0MTI5ODk4fQ.Dv2LxP447AEDNLLi3FIziHe8wW5zCyRWEWRqR1iaaXw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/lessons/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"lessons",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateLesson",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU2LCJ1c2VyTmFtZSI6ImpoaiIsInVzZXJFbWFpbCI6IjIzNDMyQGhvdG1haWwuY29tIiwidXNlclBhc3N3b3JkIjoiJDJiJDEyJGlCL3BtNWhvQVVJQ1MxM2loYndkQi5BdHVGeFAzTFAwNTNBRkV6SVRrYnFONUxaNFNtaGZHIiwidXNlclJvbGUiOiJUcmFpbmVyIiwiaWF0IjoxNjg0MTI5ODk4fQ.Dv2LxP447AEDNLLi3FIziHe8wW5zCyRWEWRqR1iaaXw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"lessonName\":\"Color\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/lessons/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"lessons",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteLesson",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU2LCJ1c2VyTmFtZSI6ImpoaiIsInVzZXJFbWFpbCI6IjIzNDMyQGhvdG1haWwuY29tIiwidXNlclBhc3N3b3JkIjoiJDJiJDEyJGlCL3BtNWhvQVVJQ1MxM2loYndkQi5BdHVGeFAzTFAwNTNBRkV6SVRrYnFONUxaNFNtaGZHIiwidXNlclJvbGUiOiJUcmFpbmVyIiwiaWF0IjoxNjg0MTI5ODk4fQ.Dv2LxP447AEDNLLi3FIziHe8wW5zCyRWEWRqR1iaaXw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/lessons/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"lessons",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "enrollment",
+			"item": [
+				{
+					"name": "createEnrollment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU3LCJ1c2VyTmFtZSI6ImpoaiIsInVzZXJFbWFpbCI6ImRhczM0NEBob3RtYWlsLmNvbSIsInVzZXJQYXNzd29yZCI6IiQyYiQxMiRPLjhTUERXdmEuYWcvUFYxYWkuLjJ1QTdtTHJKUzZPczJnV2JiTmNwM3diSzNQOTZlakM0cSIsInVzZXJSb2xlIjoiU3R1ZGVudCIsImlhdCI6MTY4NDEzMjE5N30.w1AeUsWkt-nM2o8hoYPkG5_Wdi6-1Jp-b4yhfBzSYas",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"courseId\":9\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/enrollments/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"enrollments",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getEnrollment",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU3LCJ1c2VyTmFtZSI6ImpoaiIsInVzZXJFbWFpbCI6ImRhczM0NEBob3RtYWlsLmNvbSIsInVzZXJQYXNzd29yZCI6IiQyYiQxMiRPLjhTUERXdmEuYWcvUFYxYWkuLjJ1QTdtTHJKUzZPczJnV2JiTmNwM3diSzNQOTZlakM0cSIsInVzZXJSb2xlIjoiU3R1ZGVudCIsImlhdCI6MTY4NDEzMjE5N30.w1AeUsWkt-nM2o8hoYPkG5_Wdi6-1Jp-b4yhfBzSYas",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/enrollments/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"enrollments",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateEnrollment",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU3LCJ1c2VyTmFtZSI6ImpoaiIsInVzZXJFbWFpbCI6ImRhczM0NEBob3RtYWlsLmNvbSIsInVzZXJQYXNzd29yZCI6IiQyYiQxMiRPLjhTUERXdmEuYWcvUFYxYWkuLjJ1QTdtTHJKUzZPczJnV2JiTmNwM3diSzNQOTZlakM0cSIsInVzZXJSb2xlIjoiU3R1ZGVudCIsImlhdCI6MTY4NDEzMjE5N30.w1AeUsWkt-nM2o8hoYPkG5_Wdi6-1Jp-b4yhfBzSYas",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"courseId\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/enrollments/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"enrollments",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteEnrollment",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU3LCJ1c2VyTmFtZSI6ImpoaiIsInVzZXJFbWFpbCI6ImRhczM0NEBob3RtYWlsLmNvbSIsInVzZXJQYXNzd29yZCI6IiQyYiQxMiRPLjhTUERXdmEuYWcvUFYxYWkuLjJ1QTdtTHJKUzZPczJnV2JiTmNwM3diSzNQOTZlakM0cSIsInVzZXJSb2xlIjoiU3R1ZGVudCIsImlhdCI6MTY4NDEzMjE5N30.w1AeUsWkt-nM2o8hoYPkG5_Wdi6-1Jp-b4yhfBzSYas",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/enrollments/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"enrollments",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getEnrollmentsCourse",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU2LCJ1c2VyTmFtZSI6ImpoaiIsInVzZXJFbWFpbCI6IjIzNDMyQGhvdG1haWwuY29tIiwidXNlclBhc3N3b3JkIjoiJDJiJDEyJGlCL3BtNWhvQVVJQ1MxM2loYndkQi5BdHVGeFAzTFAwNTNBRkV6SVRrYnFONUxaNFNtaGZHIiwidXNlclJvbGUiOiJUcmFpbmVyIiwiaWF0IjoxNjg0MTI5ODk4fQ.Dv2LxP447AEDNLLi3FIziHe8wW5zCyRWEWRqR1iaaXw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/enrollments/courses/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"enrollments",
+								"courses",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "blockstudent",
+			"item": [
+				{
+					"name": "createBlockStudent",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU2LCJ1c2VyTmFtZSI6ImpoaiIsInVzZXJFbWFpbCI6IjIzNDMyQGhvdG1haWwuY29tIiwidXNlclBhc3N3b3JkIjoiJDJiJDEyJGlCL3BtNWhvQVVJQ1MxM2loYndkQi5BdHVGeFAzTFAwNTNBRkV6SVRrYnFONUxaNFNtaGZHIiwidXNlclJvbGUiOiJUcmFpbmVyIiwiaWF0IjoxNjg0MTI5ODk4fQ.Dv2LxP447AEDNLLi3FIziHe8wW5zCyRWEWRqR1iaaXw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"studentId\":6,\r\n    \"courseId\":4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/blockStudents/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"blockStudents",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getBlockStudent",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU2LCJ1c2VyTmFtZSI6ImpoaiIsInVzZXJFbWFpbCI6IjIzNDMyQGhvdG1haWwuY29tIiwidXNlclBhc3N3b3JkIjoiJDJiJDEyJGlCL3BtNWhvQVVJQ1MxM2loYndkQi5BdHVGeFAzTFAwNTNBRkV6SVRrYnFONUxaNFNtaGZHIiwidXNlclJvbGUiOiJUcmFpbmVyIiwiaWF0IjoxNjg0MTI5ODk4fQ.Dv2LxP447AEDNLLi3FIziHe8wW5zCyRWEWRqR1iaaXw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/blockStudents/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"blockStudents",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getBlockStudentCourse",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU2LCJ1c2VyTmFtZSI6ImpoaiIsInVzZXJFbWFpbCI6IjIzNDMyQGhvdG1haWwuY29tIiwidXNlclBhc3N3b3JkIjoiJDJiJDEyJGlCL3BtNWhvQVVJQ1MxM2loYndkQi5BdHVGeFAzTFAwNTNBRkV6SVRrYnFONUxaNFNtaGZHIiwidXNlclJvbGUiOiJUcmFpbmVyIiwiaWF0IjoxNjg0MTI5ODk4fQ.Dv2LxP447AEDNLLi3FIziHe8wW5zCyRWEWRqR1iaaXw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/blockStudents/courses/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"blockStudents",
+								"courses",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "unblockStudent",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU2LCJ1c2VyTmFtZSI6ImpoaiIsInVzZXJFbWFpbCI6IjIzNDMyQGhvdG1haWwuY29tIiwidXNlclBhc3N3b3JkIjoiJDJiJDEyJGlCL3BtNWhvQVVJQ1MxM2loYndkQi5BdHVGeFAzTFAwNTNBRkV6SVRrYnFONUxaNFNtaGZHIiwidXNlclJvbGUiOiJUcmFpbmVyIiwiaWF0IjoxNjg0MTI5ODk4fQ.Dv2LxP447AEDNLLi3FIziHe8wW5zCyRWEWRqR1iaaXw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/blockStudents/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"blockStudents",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

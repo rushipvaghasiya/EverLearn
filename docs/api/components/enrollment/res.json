@@ -1,0 +1,44 @@
+{
+  "GetEnrollment": {
+    "type": "object",
+    "properties": {
+      "enrollId": {
+        "type": "integer",
+        "example": 6
+      },
+      "enrollAt": {
+        "type": "timestamp",
+        "example": "2023-05-14T18:30:00.000Z"
+      },
+      "studentId": {
+        "type": "integer",
+        "example": 57
+      },
+      "courseId": {
+        "type": "integer",
+        "example": 6
+      }
+    }
+  },
+  "GetEnrollmentsCourse": {
+    "type": "object",
+    "properties": {
+      "enrollId": {
+        "type": "integer",
+        "example": 6
+      },
+      "enrollAt": {
+        "type": "timestamp",
+        "example": "2023-05-14T18:30:00.000Z"
+      },
+      "studentId": {
+        "type": "integer",
+        "example": 57
+      },
+      "courseId": {
+        "type": "integer",
+        "example": 6
+      }
+    }
+  }
+}

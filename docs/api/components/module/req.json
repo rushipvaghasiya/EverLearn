@@ -1,0 +1,36 @@
+{
+  "UpdateModule": {
+    "type": "object",
+    "properties": {
+      "moduleName": {
+        "type": "string",
+        "example": "Introduction"
+      },
+      "courseId": {
+        "type": "integer",
+        "example": 57
+      }
+    }
+  },
+  "CreateModuleLesson": {
+    "type": "object",
+    "properties": {
+      "lessonName": {
+        "type": "string",
+        "example": "methods"
+      },      
+      "lessonLink": {
+        "type": "string",
+        "example": "https://www.google.com/"
+      },      
+      "moduleId": {
+        "type": "integer",
+        "example": 6
+      },      
+      "lessonDescription": {
+        "type": "string",
+        "example": "Array Methods."
+      }
+    }
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "GetCourses": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "courseId": {
+          "type": "integer",
+          "example": 6
+        },
+        "courseName": {
+          "type": "timestamp",
+          "example": "2023-05-14T18:30:00.000Z"
+        },
+        "courseDescription": {
+          "type": "string",
+          "example": "to learn about javascript language"
+        },
+        "trainerId": {
+          "type": "integer",
+          "example": 6
+        },
+        "createdBy": {
+          "type": "integer",
+          "example": 6
+        },
+        "createdAt": {
+          "type": "timestamp",
+          "example": "2023-05-14T18:30:00.000Z"
+        },
+        "updatedBy": {
+          "type": "integer",
+          "example": 6
+        },
+        "updatedAt": {
+          "type": "timestamp",
+          "example": "2023-05-14T18:30:00.000Z"
+        }
+      }
+    }
+  },
+  "GetCourse": {
+    "type": "object",
+    "properties": {
+      "courseId": {
+        "type": "integer",
+        "example": 6
+      },
+      "courseName": {
+        "type": "string",
+        "example": "JAVA"
+      },
+      "courseDescription": {
+        "type": "string",
+        "example": "to learn about javascript language"
+      },
+      "trainerId": {
+        "type": "integer",
+        "example": 6
+      },
+      "createdBy": {
+        "type": "integer",
+        "example": 6
+      },
+      "createdAt": {
+        "type": "timestamp",
+        "example": "2023-05-14T18:30:00.000Z"
+      },
+      "updatedBy": {
+        "type": "integer",
+        "example": 6
+      },
+      "updatedAt": {
+        "type": "timestamp",
+        "example": "2023-05-14T18:30:00.000Z"
+      }
+    }
+  },
+  "GetCourseRatings": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "ratingId": {
+          "type": "integer",
+          "example": 6
+        },
+        "rating": {
+          "type": "integer",
+          "example": 6
+        },
+        "ratedAt": {
+          "type": "timestamp",
+          "example": "2023-05-14T18:30:00.000Z"
+        },
+        "courseId": {
+          "type": "integer",
+          "example": 6
+        },
+        "studentId": {
+          "type": "integer",
+          "example": 6
+        }
+      }
+    }
+  },
+  "GetCourseModules": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "moduleId": {
+          "type": "integer",
+          "example": 6
+        },
+        "moduleName": {
+          "type": "string",
+          "example": "Introduction"
+        },
+        "courseId": {
+          "type": "integer",
+          "example": 3
+        },
+        "createdBy": {
+          "type": "integer",
+          "example": 6
+        },
+        "createdAt": {
+          "type": "timestamp",
+          "example": "2023-05-14T18:30:00.000Z"
+        },
+        "updatedBy": {
+          "type": "integer",
+          "example": 6
+        },
+        "updatedAt": {
+          "type": "timestamp",
+          "example": "2023-05-14T18:30:00.000Z"
+        }
+      }
+    }
+  }
+}

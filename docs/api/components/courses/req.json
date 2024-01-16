@@ -1,0 +1,82 @@
+{
+  "CreateCourse": {
+    "type": "object",
+    "properties": {
+      "courseId": {
+        "type": "integer",
+        "example": 6
+      },
+      "courseName": {
+        "type": "timestamp",
+        "example": "2023-05-14T18:30:00.000Z"
+      },
+      "courseDescription": {
+        "type": "string",
+        "example": "to learn about javascript language"
+      },
+      "trainerId": {
+        "type": "integer",
+        "example": 6
+      },
+      "createdBy": {
+        "type": "integer",
+        "example": 6
+      },
+      "createdAt": {
+        "type": "timestamp",
+        "example": "2023-05-14T18:30:00.000Z"
+      },
+      "updatedBy": {
+        "type": "integer",
+        "example": 6
+      },
+      "updatedAt": {
+        "type": "timestamp",
+        "example": "2023-05-14T18:30:00.000Z"
+      }
+    }
+  },
+  "UpdateCourse": {
+    "type": "object",
+    "properties": {
+      "courseName": {
+        "type": "timestamp",
+        "example": "2023-05-14T18:30:00.000Z"
+      },
+      "courseDescription": {
+        "type": "string",
+        "example": "to learn about javascript language"
+      },
+      "trainerId": {
+        "type": "integer",
+        "example": 6
+      }
+    }
+  },
+  "AddCourseRating": {
+    "type": "object",
+    "properties": {
+      "rating": {
+        "type": "integer",
+        "example": 6
+      },
+      "courseId": {
+        "type": "integer",
+        "example": 6
+      }
+    }
+  },
+  "CreateCourseModule": {
+    "type": "object",
+      "properties": {
+        "moduleName": {
+          "type": "string",
+          "example": "Introduction"
+        },
+        "courseId": {
+          "type": "integer",
+          "example": 3
+        }
+      }
+  }
+}
