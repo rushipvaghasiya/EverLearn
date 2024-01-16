@@ -2,6 +2,8 @@
 
 EverLearn is a web-based LMS application that allows users to access courses and learn at their own pace. The app provides various features such as course management,  ratings, enrollments, module management, lesson management, and student blocking. The application is designed to be user-friendly, easy to navigate, and provide an excellent learning experience for users.
 
+See [API documentation](https://rushipvaghasiya.github.io/EverLearn/docs/api/)
+
 ---
 ## Prerequisites
 
